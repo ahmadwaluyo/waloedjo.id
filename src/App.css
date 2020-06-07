@@ -698,6 +698,10 @@ h3 {
   color: #000000 !important;
 }
 
+.profile h4 {
+  padding-top: 10px;
+}
+
 @media only screen and (max-width: 1149px) {
   #about article {
     grid-template-columns: 1fr;
