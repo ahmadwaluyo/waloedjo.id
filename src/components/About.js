@@ -53,7 +53,7 @@ export default function About(props) {
                 <div style={{ display: 'flex',flexDirection: 'column', width: '60%', fontFamily: 'inherit'}}>
                     <h4>: Ahmad Waluyo</h4>
                     <h4>: Kebumen, 02-15-1995</h4>
-                    <h4>: Programming, Networking</h4>
+                    <h4>: IT Developer</h4>
                     <h4>: </h4>
                 </div>
               </div>
