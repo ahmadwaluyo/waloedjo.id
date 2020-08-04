@@ -21,6 +21,20 @@ export default function Projects (props) {
           </div>
           <div className="projects-wrapper">
           <Project
+              title="ModaLin"
+              img={'https://i.ibb.co/LQkPF8P/rsz-screenshot-from-2020-08-04-14-25-28.png'}
+              tech="js  css  react  node"
+              link="https://github.com/Modalin"
+              repo="https://github.com/Modalin"
+            >
+            <small>
+              Built using Node, Express, MongoDB, React Native+Expo, Firebase Storage, Native Base.
+            </small>
+            <p>
+              This App was built for final project submission Hacktiv8 Indonesia. ModaLin is a group project with 4 participants. This Mobile App provides some services to connect between investor and entrepreneurs which is looking for startup capital.
+            </p>
+          </Project>
+          <Project
               title="Neplix Entertainme."
               img={'https://i.ibb.co/kMDF107/rsz-screenshot-from-2020-05-26-11-30-22.png'}
               tech="js  css  react  node"
@@ -38,7 +52,7 @@ export default function Projects (props) {
               title="Sudoku React Native."
               img={'https://i.ibb.co/jWXc0xn/rsz-screenshot-from-2020-05-26-11-21-49.png'}
               tech="js  css  react  node"
-              link="https://github.com/ahmadwaluyo/sudoku_react_native"
+              link="https://expo.io/@joe_achmed/sudoku"
               repo="https://github.com/ahmadwaluyo/sudoku_react_native"
             >
               <small>

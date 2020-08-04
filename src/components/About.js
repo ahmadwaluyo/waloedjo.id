@@ -36,8 +36,7 @@ export default function About(props) {
                     <h4>Birthplace/Year</h4>
                     <h4>Background</h4>
                     <h4>Area of Expertise</h4>
-
-                    <div style={{ paddingTop: 30, width: '200%', display: 'flex', justifyContent: 'space-around'}}>
+                    <div style={{ paddingTop: 20, paddingBottom: 10, width: '200%', display: 'flex', justifyContent: 'space-around'}}>
                       <i className="fab fa-js-square" />
                       <i className="fab fa-html5" />
                       <i className="fab fa-css3-alt" />
@@ -49,6 +48,12 @@ export default function About(props) {
                       <i className="fab fa-aws" />
                       <i className="fab fa-github" />
                     </div>
+                    <h4>Certifications</h4>
+                    <div style={{ margin: 10, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                      <a href="https://hire.hacktiv8.com/verify/fsjs/AhmadWaluyo-20200615" target="_blank"><h5><i>Fullstack Immersive Javascript</i></h5></a>
+                      <a href="https://drive.google.com/file/d/0B3WZj2C-rwbCN1V4aW4xOVpYWkVvX0NkLTFsTnhXT0YyQ1VV/view?usp=sharing" target="_blank"><h5><i>CSCU V.2</i></h5></a>
+                    </div>
+
                 </div>
                 <div style={{ display: 'flex',flexDirection: 'column', width: '60%', fontFamily: 'inherit'}}>
                     <h4>: Ahmad Waluyo</h4>

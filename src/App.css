@@ -703,6 +703,10 @@ h3 {
 }
 
 @media only screen and (max-width: 1149px) {
+  #about {
+    background-position: center;
+    background-size: cover;
+  }
   #about article {
     grid-template-columns: 1fr;
     grid-gap: 0;
@@ -718,11 +722,16 @@ h3 {
 @media only screen and (max-width: 949px) {
   #about {
     clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
-    background-position: top left;
+    /* background-position: top left; */
+    background-position: center;
     background-size: cover;
   }
 }
 @media only screen and (max-width: 582px) {
+  #about {
+    background-position: center;
+    background-size: cover;
+  }
   #about .wrapper {
     padding: 10rem 0rem 8rem;
     justify-content: center;
