@@ -50,8 +50,8 @@ export default function About(props) {
                     </div>
                     <h4>Certifications</h4>
                     <div style={{ margin: 10, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                      <a href="https://hire.hacktiv8.com/verify/fsjs/AhmadWaluyo-20200615" target="_blank"><h5><i>Fullstack Immersive Javascript</i></h5></a>
-                      <a href="https://drive.google.com/file/d/0B3WZj2C-rwbCN1V4aW4xOVpYWkVvX0NkLTFsTnhXT0YyQ1VV/view?usp=sharing" target="_blank"><h5><i>CSCU V.2</i></h5></a>
+                      <a href="https://hire.hacktiv8.com/verify/fsjs/AhmadWaluyo-20200615" target="_blank" rel="noopener noreferrer"><h5><i>Fullstack Immersive Javascript</i></h5></a>
+                      <a href="https://drive.google.com/file/d/0B3WZj2C-rwbCN1V4aW4xOVpYWkVvX0NkLTFsTnhXT0YyQ1VV/view?usp=sharing" target="_blank" rel="noopener noreferrer"><h5><i>CSCU V.2</i></h5></a>
                     </div>
 
                 </div>

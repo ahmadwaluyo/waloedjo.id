@@ -21,6 +21,35 @@ export default function Projects (props) {
           </div>
           <div className="projects-wrapper">
           <Project
+              title="Reseller App"
+              img={'https://i.ibb.co/ypSP642/rsz-screenshot-from-2020-08-08-20-12-10.png'}
+              tech="js  css  react  node"
+              link="https://github.com/ahmadwaluyo/reseller_client"
+              repo="https://github.com/ahmadwaluyo/reseller_client"
+            >
+            <small>
+              Built using Node, Express, MongoDB, PostgreSQL React Native+Expo, Firebase Storage, Native Base, ReactJS, MaterialUI.
+            </small>
+            <p>
+              Reseller App is my very first freelance job i've ever handled. This is a fullstack project with PostgreSQL for database and React Native Expo for mobile. And CMS using React + MaterialUI theme for web dashboard. 
+              This App has being finalized.
+            </p>
+          </Project>
+          <Project
+              title="PPM Wiriosoedarmo"
+              img={'https://i.ibb.co/DzCdjPz/rsz-screenshot-from-2020-08-08-19-50-18.png'}
+              tech="js  css  react"
+              link="https://github.com/ahmadwaluyo/ppm_wiriosoedarmo"
+              repo="https://github.com/ahmadwaluyo/ppm_wiriosoedarmo"
+            >
+            <small>
+              Built using ReactJS, MaterialUI, Redux, Firebase Storage, And Under Development for additional dashboard.
+            </small>
+            <p>
+              This App was built to fulfill digitalization branding of Wiriosoedarmo Muhammadiyah Boarding School. This web is under developing process.
+            </p>
+          </Project>
+          <Project
               title="ModaLin"
               img={'https://i.ibb.co/LQkPF8P/rsz-screenshot-from-2020-08-04-14-25-28.png'}
               tech="js  css  react  node"
