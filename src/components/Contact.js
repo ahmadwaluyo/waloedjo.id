@@ -2,32 +2,52 @@ import React from 'react';
 import { useState } from 'react'
 import SocialLinks from './SocialLinks';
 import axios from 'axios';
-import swal from 'sweetalert'
+import swal from 'sweetalert2';
 import '../App.css';
+import { Spin } from 'antd';
 
 export default function Contact (props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault()
     const data = { name, email, message };
-    axios.post('https://waloedjo.herokuapp.com', data)
-      .then(result => {
-        console.log('success', result);
-        swal("Thank you for your Attention!", "Your messages sent successfully to Ahmad's mailbox", "success");
-      })
-      .catch(err => {
-        swal("Oops!", "Something went wrong!", "error");
-      })
+    swal.fire({
+      title: 'Confirm',
+      text: "are you sure want to send me a message?",
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes',
+      cancelButtonText: 'No, Maybe later'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        setLoading(true);
+        axios.post('https://waloedjo.herokuapp.com', data)
+          .then(result => {
+            console.log('success', result);
+            swal.fire("Thank you for your Attention!", "Your messages sent successfully to Ahmad's mailbox", "success");
+          })
+          .catch(err => {
+            swal.fire("Oops!", "Something went wrong!", "error");
+          })
+          .finally(() => {
+            setLoading(false)
+          })
+          setName('');
+          setEmail('');
+          setMessage('');
+      }
+    })
 
-      setName('');
-      setEmail('');
-      setMessage('');
   }
 
     return (
+      <Spin spinning={loading} size="large" centered>
       <section id="contact">
         <div className="container">
           <div className="heading-wrapper">
@@ -57,5 +77,6 @@ export default function Contact (props) {
           </form>
         </div>
       </section>
+      </Spin>
     );
   };

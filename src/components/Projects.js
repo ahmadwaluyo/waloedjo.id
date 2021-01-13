@@ -15,11 +15,25 @@ export default function Projects (props) {
               <a href="https://hacktiv8.com/" target="_blank" rel="noopener noreferrer">
                 hacktiv8 Indonesia
               </a>
-              , where I've been coding for almost 5 months non-stop until I completed all the projects
+              , where I have been coding for almost 5 months non-stop until I completed all the projects
               required to get my Full-Stack Developer certification.
             </p>
           </div>
           <div className="projects-wrapper">
+          <Project
+              title="CEISA V.4"
+              img={'https://i.ibb.co/G9h3wx1/portal-beacukai.png'}
+              tech="js  css  react  node"
+              link="https://portal.beacukai.go.id/"
+              repo="https://portal.beacukai.go.id/"
+            >
+            <small>
+              Built using Java Springboot, React + Antd Design, Firebase Storage, Redux.
+            </small>
+            <p>
+              This App was built for Beacukai administration process and it is used in whole beacukai's branch in Indonesia
+            </p>
+          </Project>
           <Project
               title="Reseller App"
               img={'https://i.ibb.co/ypSP642/rsz-screenshot-from-2020-08-08-20-12-10.png'}
@@ -31,7 +45,7 @@ export default function Projects (props) {
               Built using Node, Express, MongoDB, PostgreSQL React Native+Expo, Firebase Storage, Native Base, ReactJS, MaterialUI.
             </small>
             <p>
-              Reseller App is my very first freelance job i've ever handled. This is a fullstack project with PostgreSQL for database and React Native Expo for mobile. And CMS using React + MaterialUI theme for web dashboard. 
+              Reseller App is my very first freelance job i've ever handled. This is a fullstack project with PostgreSQL for database and React Native Expo for mobile. And CMS using React + MaterialUI theme for web dashboard.
               This App has being finalized.
             </p>
           </Project>
@@ -39,7 +53,7 @@ export default function Projects (props) {
               title="PPM Wiriosoedarmo"
               img={'https://i.ibb.co/DzCdjPz/rsz-screenshot-from-2020-08-08-19-50-18.png'}
               tech="js  css  react"
-              link="https://github.com/ahmadwaluyo/ppm_wiriosoedarmo"
+              link="https://wiriosoedarmogombong.com"
               repo="https://github.com/ahmadwaluyo/ppm_wiriosoedarmo"
             >
             <small>

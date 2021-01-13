@@ -1,7 +1,46 @@
 import React from 'react';
+import { Table, Tag } from 'antd';
 import '../App.css';
 
 export default function About(props) {
+  const columns = [
+    {
+      title: 'Certificate',
+      dataIndex: 'certificate',
+      alignItems: 'center',
+    },
+    {
+      title: 'Published by',
+      dataIndex: 'published',
+      alignItems: 'center'
+    },
+    {
+      title: 'Link',
+      alignItems: 'center',
+      dataIndex: 'link',
+      render: (key, record, index) => (
+        <Tag color="green" style={{ cursor: 'pointer' }}>
+          <a style={{ fontSize: 'medium'}} href={key} target="_blank" rel="noopener noreferrer">
+          View
+          </a>
+        </Tag>
+      )
+    },
+  ];
+  const data = [
+    {
+      key: '1',
+      certificate: 'CSCU v.2',
+      published: 'EC-Council',
+      link: 'https://drive.google.com/file/d/0B3WZj2C-rwbCN1V4aW4xOVpYWkVvX0NkLTFsTnhXT0YyQ1VV/view?usp=sharing'
+    },
+    {
+      key: '2',
+      certificate: 'Fullstack Javascript',
+      published: 'Hacktiv8',
+      link: 'https://hire.hacktiv8.com/verify/fsjs/AhmadWaluyo-20200615',
+    }
+  ];
     return (
       <section id="about">
         <div className="wrapper">
@@ -49,11 +88,9 @@ export default function About(props) {
                       <i className="fab fa-github" />
                     </div>
                     <h4>Certifications</h4>
-                    <div style={{ margin: 10, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                      <a href="https://hire.hacktiv8.com/verify/fsjs/AhmadWaluyo-20200615" target="_blank" rel="noopener noreferrer"><h5><i>Fullstack Immersive Javascript</i></h5></a>
-                      <a href="https://drive.google.com/file/d/0B3WZj2C-rwbCN1V4aW4xOVpYWkVvX0NkLTFsTnhXT0YyQ1VV/view?usp=sharing" target="_blank" rel="noopener noreferrer"><h5><i>CSCU V.2</i></h5></a>
+                    <div style={{ width: "25vw"}}>
+                    <Table dataSource={data} columns={columns} size="large" pagination={false} style={{ width: "100%" }} />
                     </div>
-
                 </div>
                 <div style={{ display: 'flex',flexDirection: 'column', width: '60%', fontFamily: 'inherit'}}>
                     <h4>: Ahmad Waluyo</h4>

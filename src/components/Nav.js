@@ -11,6 +11,7 @@ export default function Nav (props) {
             <strong> Waluyo</strong>
           </p>
           <a
+            href={() => false}
             onClick={props.toggleMenu}
             className={props.showMenu === 'active' ? 'menu-button active' : 'menu-button'}
           >
