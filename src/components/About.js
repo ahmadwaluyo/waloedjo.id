@@ -12,7 +12,7 @@ export default function About(props) {
     {
       title: 'Published by',
       dataIndex: 'published',
-      alignItems: 'center'
+      alignItems: 'center',
     },
     {
       title: 'Link',

@@ -21,6 +21,20 @@ export default function Projects (props) {
           </div>
           <div className="projects-wrapper">
           <Project
+              title="MUNERIS VMWare Airforce"
+              img={'https://i.ibb.co/MfBW0ZY/rsz-12whatsapp-image-2021-01-14-at-172548.jpg'}
+              tech="js  css  react  node"
+              link="https://i.ibb.co/b5ySX3Z/Fixed-Sorry-you-are-not-allowed-to-access-this-page.png"
+              repo="https://i.ibb.co/b5ySX3Z/Fixed-Sorry-you-are-not-allowed-to-access-this-page.png"
+            >
+            <small>
+              Built using NodeJS, React + CoreUI, Redux.
+            </small>
+            <p>
+              This App was built in collaboration with VMWare Indonesia to fulfill National Airforce needs in IT Sectors
+            </p>
+          </Project>
+          <Project
               title="CEISA V.4"
               img={'https://i.ibb.co/G9h3wx1/portal-beacukai.png'}
               tech="js  css  react  node"
