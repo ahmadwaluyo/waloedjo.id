@@ -39,6 +39,12 @@ export default function About(props) {
       certificate: 'Fullstack Javascript',
       published: 'Hacktiv8',
       link: 'https://hire.hacktiv8.com/verify/fsjs/AhmadWaluyo-20200615',
+    },
+    {
+      key: '3',
+      certificate: 'Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)',
+      published: 'Dicoding',
+      link: 'https://www.dicoding.com/certificates/98XW6145WXM3',
     }
   ];
     return (
@@ -95,7 +101,7 @@ export default function About(props) {
                 <div style={{ display: 'flex',flexDirection: 'column', width: '60%', fontFamily: 'inherit'}}>
                     <h4>: Ahmad Waluyo</h4>
                     <h4>: Kebumen, 02-15-1995</h4>
-                    <h4>: IT Developer</h4>
+                    <h4>: Software Developer</h4>
                     <h4>: </h4>
                 </div>
               </div>

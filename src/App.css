@@ -886,7 +886,7 @@ h3 {
   color: #252934;
   overflow: hidden;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 10%;
   border: 1px solid #fafafa;
   box-shadow: 0 20px 10px -10px #25293450;
   transition: 300ms;
@@ -1090,6 +1090,28 @@ input[type="text"]:not(output):focus,
 input[type="email"]:not(output):focus,
 textarea:focus {
   border-bottom: 1px solid #2fc4b2;
+}
+
+.submit {
+  background: #2fc4b2;
+  color: #fafafa;
+  margin-top: 1rem;
+  width: 7em;
+  float: right;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.submit:hover,
+.submit:focus {
+  cursor: pointer;
+  color: #333;
+  background: #fafafa;
 }
 
 input[type="submit"] {
