@@ -37,7 +37,7 @@ export default function Projects(props) {
               "https://i.ibb.co/JjYHX5K/Screen-Shot-2022-04-18-at-11-13-08.png"
             }
             tech="js  css  vue"
-            link="https://merchant.wehelpyou.xyz/"
+            link="https://dev-website.wehelpyou.xyz/"
             repo="https://i.ibb.co/b5ySX3Z/Fixed-Sorry-you-are-not-allowed-to-access-this-page.png"
           >
             <small>Built using Vue3 + Tailwindcss</small>
@@ -51,7 +51,7 @@ export default function Projects(props) {
               "https://i.ibb.co/0BWDtQD/Screen-Shot-2022-04-18-at-11-36-46.png"
             }
             tech="js  css  vue"
-            link="https://dev-website.wehelpyou.xyz/"
+            link="https://merchant.wehelpyou.xyz/"
             repo="https://i.ibb.co/b5ySX3Z/Fixed-Sorry-you-are-not-allowed-to-access-this-page.png"
           >
             <small>Built using Vue3 + Tailwindcss</small>
