@@ -75,10 +75,10 @@ export default function Contact(props) {
                 <span className="mail">
                   ahmad.umb15
                   <i className="fas fa-at at" />
-                  gmail.com
+                  gmail.com,
                 </span>
                 <span>
-                  Or kindly to review my CV's{" "}
+                  &nbsp;Or kindly to review my CV's{" "}
                   <a
                     style={{ color: "white" }}
                     href="../assets/CV_AhmadWaluyo.pdf"

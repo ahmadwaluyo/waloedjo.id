@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Project from "./Project";
 import "../App.css";
 
 export default function Projects(props) {
+  const ref = useRef(3);
+
+  useEffect(() => {
+    ref.current = 1
+  }, [])
   return (
     <section id="projects">
       <div className="projects-container">
         <div className="heading">
-          <h3 className="title works">My Works</h3>
+          <h3 className="title works">My Works { ref.current }</h3>
           <p className="separator" />
-          <p className="subtitle">
-            Here's a list of <u>most</u> of the projects I've been working on
+          <p className="subtitle flex justify-center">
+            Here's a list of most of the projects I've been working on
             lately.
             {/* All of these were built during my coding camp adventure on{" "}
             <a
@@ -32,7 +37,7 @@ export default function Projects(props) {
               "https://i.ibb.co/JjYHX5K/Screen-Shot-2022-04-18-at-11-13-08.png"
             }
             tech="js  css  vue"
-            link="https://dev-website.wehelpyou.xyz/"
+            link="https://merchant.wehelpyou.xyz/"
             repo="https://i.ibb.co/b5ySX3Z/Fixed-Sorry-you-are-not-allowed-to-access-this-page.png"
           >
             <small>Built using Vue3 + Tailwindcss</small>
